@@ -1388,7 +1388,7 @@ EXIT:
  */
 ExynosVideoErrorType MFC_Encoder_Set_DropControl(
     void                  *pHandle,
-    ExynosVideoBoolType    bEnable)
+    __attribute__((unused)) ExynosVideoBoolType    bEnable)
 {
     CodecOSALVideoContext   *pCtx  = (CodecOSALVideoContext *)pHandle;
     ExynosVideoErrorType     ret   = VIDEO_ERROR_NONE;
